@@ -1,0 +1,15 @@
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\bin\Debug\net6.0\QuebraCabeca.exe
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\bin\Debug\net6.0\QuebraCabeca.deps.json
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\bin\Debug\net6.0\QuebraCabeca.runtimeconfig.json
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\bin\Debug\net6.0\QuebraCabeca.dll
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\bin\Debug\net6.0\QuebraCabeca.pdb
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\obj\Debug\net6.0\QuebraCabeca.csproj.AssemblyReference.cache
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\obj\Debug\net6.0\QuebraCabeca.GeneratedMSBuildEditorConfig.editorconfig
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\obj\Debug\net6.0\QuebraCabeca.AssemblyInfoInputs.cache
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\obj\Debug\net6.0\QuebraCabeca.AssemblyInfo.cs
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\obj\Debug\net6.0\QuebraCabeca.csproj.CoreCompileInputs.cache
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\obj\Debug\net6.0\QuebraCabeca.dll
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\obj\Debug\net6.0\refint\QuebraCabeca.dll
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\obj\Debug\net6.0\QuebraCabeca.pdb
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\obj\Debug\net6.0\QuebraCabeca.genruntimeconfig.cache
+D:\Carla Reis\Documents\OneDrive\OneDrive - Universidade Feevale\Ciencia da Computação\2024-01\INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL\Trabalho\QuebraCabeca\obj\Debug\net6.0\ref\QuebraCabeca.dll

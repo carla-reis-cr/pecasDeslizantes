@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "QuebraCabeca/1.0.0": {
+        "runtime": {
+          "QuebraCabeca.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "QuebraCabeca/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
