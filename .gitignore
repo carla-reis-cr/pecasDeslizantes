@@ -1,0 +1,3 @@
+# Ignorar todas as pastas chamadas bin e obj em qualquer lugar do projeto
+**/bin/Debug/
+**/obj/
