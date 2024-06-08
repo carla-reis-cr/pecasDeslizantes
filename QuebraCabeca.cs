@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-class QuebraCabeca
+public class QuebraCabeca
 {
- private int[,] estado;
+ public int[,] estado;
 
  public QuebraCabeca(int[,] estadoInicial)
  {
@@ -14,7 +14,6 @@ class QuebraCabeca
  {
   int[,] estadoFinal = new int[3, 3] { { 1, 2, 3 }, { 8, 0, 4 }, { 7, 6, 5 } };
 
-  // Verificando se a matriz atual é igual à matriz do estado final
   for (int i = 0; i < 3; i++)
   {
    for (int j = 0; j < 3; j++)
@@ -33,7 +32,6 @@ class QuebraCabeca
  {
   List<(QuebraCabeca, string)> movimentos = new List<(QuebraCabeca, string)>();
 
-  // Encontra a posição da peça vazia
   int linhaVazia = -1;
   int colunaVazia = -1;
   for (int i = 0; i < 3; i++)
@@ -49,7 +47,6 @@ class QuebraCabeca
    }
   }
 
-  // Verificar movimentos possíveis e adicionar à lista de movimentos
   if (linhaVazia > 0)
   {
    int[,] novoEstado = (int[,])estado.Clone();
@@ -85,15 +82,8 @@ class QuebraCabeca
   matriz[linhaDestino, colunaDestino] = temp;
  }
 
- public void ImprimirEstado()
+ public string ImprimirEstado()
  {
-  for (int i = 0; i < 3; i++)
-  {
-   for (int j = 0; j < 3; j++)
-   {
-    Console.Write(estado[i, j] + " ");
-   }
-   Console.WriteLine();
-  }
+  return ConversorMatrizString.MatrizParaString(estado);
  }
 }
