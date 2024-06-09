@@ -11,15 +11,9 @@ public class QuebraCabeca
  {
   estado = estadoInicial;
   custo = 0;
-  heuristica = CalcularHeuristica();
+  heuristica = CalcularHeuristicaEuclidiana();
  }
 
- public QuebraCabeca(int[,] estadoInicial, int custoAtual)
- {
-  estado = estadoInicial;
-  custo = custoAtual;
-  heuristica = CalcularHeuristica();
- }
  public bool EstaResolvido()
  {
   int[,] estadoFinal = new int[3, 3] { { 1, 2, 3 }, { 8, 0, 4 }, { 7, 6, 5 } };
@@ -92,16 +86,15 @@ public class QuebraCabeca
   matriz[linhaDestino, colunaDestino] = temp;
  }
 
- public string ImprimirEstado()
+ public int ValorTotal()
  {
-  return ConversorMatrizString.MatrizParaString(estado);
+  return custo + heuristica;
  }
 
- private int CalcularHeuristica()
- //Euclesiana
+ private int CalcularHeuristicaEuclidiana()
  {
   int[,] estadoFinal = new int[3, 3] { { 1, 2, 3 }, { 8, 0, 4 }, { 7, 6, 5 } };
-  double distancia = 0;
+  double euclidiana = 0.0;
 
   for (int i = 0; i < 3; i++)
   {
@@ -110,25 +103,32 @@ public class QuebraCabeca
     int valor = estado[i, j];
     if (valor != 0)
     {
-     for (int k = 0; k < 3; k++)
-     {
-      for (int l = 0; l < 3; l++)
-      {
-       if (estadoFinal[k, l] == valor)
-       {
-        distancia += Math.Sqrt(Math.Pow(i - k, 2) + Math.Pow(j - l, 2));
-       }
-      }
-     }
+     (int x, int y) = EncontrarPosicao(estadoFinal, valor);
+     euclidiana += Math.Sqrt(Math.Pow(x - i, 2) + Math.Pow(y - j, 2));
     }
    }
   }
 
-  return (int)distancia;
+  return (int)euclidiana;
  }
 
- public int ValorTotal()
+ private (int, int) EncontrarPosicao(int[,] estado, int valor)
  {
-  return custo + heuristica;
+  for (int i = 0; i < 3; i++)
+  {
+   for (int j = 0; j < 3; j++)
+   {
+    if (estado[i, j] == valor)
+    {
+     return (i, j);
+    }
+   }
+  }
+  return (-1, -1); // Valor não encontrado
+ }
+
+ public string ImprimirEstado()
+ {
+  return ConversorMatrizString.MatrizParaString(estado);
  }
 }
