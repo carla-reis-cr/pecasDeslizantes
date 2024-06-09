@@ -10,6 +10,9 @@ class Program
         int[,] estadoInicial = ConversorMatrizString.StringParaMatriz(entrada);
         QuebraCabeca quebraCabecaInicial = new QuebraCabeca(estadoInicial);
 
+        Console.WriteLine("Resolvendo pelo Busca em Amplitude ...");
         ResolutorQuebraCabeca.BuscaEmAmplitude(quebraCabecaInicial);
+        Console.WriteLine("Resolvendo pelo Busca pela Melhor Escolha ...");
+        ResolutorQuebraCabeca.BuscaMelhorEscolha(quebraCabecaInicial);
     }
 }
