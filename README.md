@@ -20,4 +20,5 @@ Por fim, na quarta etapa, realizamos uma análise detalhada dos resultados obtid
 
 ### Observações
 Projeto completo está na branch 'Main'
+
 Link da explicação da implementação do código: https://youtu.be/MkZ0GxKdPew
