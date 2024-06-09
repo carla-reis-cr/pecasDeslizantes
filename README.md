@@ -18,4 +18,6 @@ Na terceira etapa, exploramos a implementação da solução utilizando o algori
 
 Por fim, na quarta etapa, realizamos uma análise detalhada dos resultados obtidos, incluindo a melhor solução encontrada, o consumo de recursos e uma análise de diferentes entradas.
 
+### Observações
 Projeto completo está na branch 'Main'
+Link da explicação da implementação do código: https://youtu.be/MkZ0GxKdPew
