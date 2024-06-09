@@ -1,0 +1,33 @@
+busca_melhor_escolha(Luger)
+inicio
+ abertos := [Inicial];
+ fechados := [];
+ enquanto abertos for diferente de [] faça
+  inicio
+   retire o estado mais à esquerda de abertos e chame-o de X;
+   se X = objetivo então retorna o caminho de Inicial até X
+   se não inicio
+    gera filhos de X;
+    para cada filho de X faça
+    caso
+     o filho não está em abertos ou em fechados:
+      inicio
+       atribua ao filho um valor heuristico;
+       acresente o filho a abertos
+      fim
+     o filho já está em abertos:
+      se o filho foi alcançado por um caminho mais curto
+      então de ao estado em abertos o caminho mais curto
+     o filho já está em fechados:
+      se o filho foi alcançado por um caminho mais curto, então
+       inicio
+        retire o estado de fechados;
+        acresente o filho em abertos
+       fim
+    fim;
+   fim
+    coloque X em fechados;
+    reordene estados em aberto pelo mérito heuristico (melhor mais a esquerda)
+  fim
+  retorna FALHA
+fim

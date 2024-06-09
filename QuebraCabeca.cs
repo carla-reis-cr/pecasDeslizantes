@@ -4,12 +4,22 @@ using System.Collections.Generic;
 public class QuebraCabeca
 {
  public int[,] estado;
+ public int custo;
+ public int heuristica;
 
  public QuebraCabeca(int[,] estadoInicial)
  {
   estado = estadoInicial;
+  custo = 0;
+  heuristica = CalcularHeuristica();
  }
 
+ public QuebraCabeca(int[,] estadoInicial, int custoAtual)
+ {
+  estado = estadoInicial;
+  custo = custoAtual;
+  heuristica = CalcularHeuristica();
+ }
  public bool EstaResolvido()
  {
   int[,] estadoFinal = new int[3, 3] { { 1, 2, 3 }, { 8, 0, 4 }, { 7, 6, 5 } };
@@ -85,5 +95,40 @@ public class QuebraCabeca
  public string ImprimirEstado()
  {
   return ConversorMatrizString.MatrizParaString(estado);
+ }
+
+ private int CalcularHeuristica()
+ //Euclesiana
+ {
+  int[,] estadoFinal = new int[3, 3] { { 1, 2, 3 }, { 8, 0, 4 }, { 7, 6, 5 } };
+  double distancia = 0;
+
+  for (int i = 0; i < 3; i++)
+  {
+   for (int j = 0; j < 3; j++)
+   {
+    int valor = estado[i, j];
+    if (valor != 0)
+    {
+     for (int k = 0; k < 3; k++)
+     {
+      for (int l = 0; l < 3; l++)
+      {
+       if (estadoFinal[k, l] == valor)
+       {
+        distancia += Math.Sqrt(Math.Pow(i - k, 2) + Math.Pow(j - l, 2));
+       }
+      }
+     }
+    }
+   }
+  }
+
+  return (int)distancia;
+ }
+
+ public int ValorTotal()
+ {
+  return custo + heuristica;
  }
 }
